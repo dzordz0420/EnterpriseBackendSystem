@@ -112,7 +112,7 @@ namespace DataAccessLayer.Repositories
             var parameters = string.Join(", ", ids.Select((id, index) => $"@id{index}"));
 
             using var sqlCommand = sqlConnection.CreateCommand();
-            sqlCommand.CommandText = $"SELECT * FROM Recipes WHERE idRecepta IN ({parameters})";
+            sqlCommand.CommandText = $"SELECT * FROM Recipes WHERE idRecipe IN ({parameters})";
 
             for (int i = 0; i < ids.Count; i++)
                 sqlCommand.Parameters.AddWithValue($"@id{i}", ids[i]);
