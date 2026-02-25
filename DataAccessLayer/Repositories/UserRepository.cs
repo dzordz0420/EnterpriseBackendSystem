@@ -14,7 +14,7 @@ namespace DataAccessLayer.Repositories
     {
         private string GetStringSafe(SqlDataReader reader, int index)
         {
-            return reader.IsDBNull(index) ? "" : reader.GetString(index);
+            return reader.IsDBNull(index) ? null : reader.GetString(index);
         }
 
         public bool Add(User item)

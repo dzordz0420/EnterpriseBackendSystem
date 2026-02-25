@@ -15,7 +15,7 @@ namespace Entity
         public int Time {  get; set; }
         public string Category { get; set; }
         public decimal? AverageRating { get; set; }
-        public string Author { get; set; }
+        public int Author { get; set; }
         public string? RecipePicture { get; set; }
 
     }

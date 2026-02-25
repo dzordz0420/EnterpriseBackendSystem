@@ -9,3 +9,4 @@ E:\C# project\EnterpriseBackendSystem\Entity\obj\Debug\net8.0\Entity.dll
 E:\C# project\EnterpriseBackendSystem\Entity\obj\Debug\net8.0\refint\Entity.dll
 E:\C# project\EnterpriseBackendSystem\Entity\obj\Debug\net8.0\Entity.pdb
 E:\C# project\EnterpriseBackendSystem\Entity\obj\Debug\net8.0\ref\Entity.dll
+E:\C# project\EnterpriseBackendSystem\Entity\obj\Debug\net8.0\Entity.sourcelink.json

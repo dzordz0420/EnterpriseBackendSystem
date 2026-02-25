@@ -9,3 +9,4 @@ E:\C# project\EnterpriseBackendSystem\BusinessLayer\obj\Debug\net8.0\BusinessLay
 E:\C# project\EnterpriseBackendSystem\BusinessLayer\obj\Debug\net8.0\refint\BusinessLayer.dll
 E:\C# project\EnterpriseBackendSystem\BusinessLayer\obj\Debug\net8.0\BusinessLayer.pdb
 E:\C# project\EnterpriseBackendSystem\BusinessLayer\obj\Debug\net8.0\ref\BusinessLayer.dll
+E:\C# project\EnterpriseBackendSystem\BusinessLayer\obj\Debug\net8.0\BusinessLayer.sourcelink.json
