@@ -1,0 +1,11 @@
+E:\C# project\EnterpriseBackendSystem\Entity\bin\Debug\net8.0\Entity.deps.json
+E:\C# project\EnterpriseBackendSystem\Entity\bin\Debug\net8.0\Entity.dll
+E:\C# project\EnterpriseBackendSystem\Entity\bin\Debug\net8.0\Entity.pdb
+E:\C# project\EnterpriseBackendSystem\Entity\obj\Debug\net8.0\Entity.GeneratedMSBuildEditorConfig.editorconfig
+E:\C# project\EnterpriseBackendSystem\Entity\obj\Debug\net8.0\Entity.AssemblyInfoInputs.cache
+E:\C# project\EnterpriseBackendSystem\Entity\obj\Debug\net8.0\Entity.AssemblyInfo.cs
+E:\C# project\EnterpriseBackendSystem\Entity\obj\Debug\net8.0\Entity.csproj.CoreCompileInputs.cache
+E:\C# project\EnterpriseBackendSystem\Entity\obj\Debug\net8.0\Entity.dll
+E:\C# project\EnterpriseBackendSystem\Entity\obj\Debug\net8.0\refint\Entity.dll
+E:\C# project\EnterpriseBackendSystem\Entity\obj\Debug\net8.0\Entity.pdb
+E:\C# project\EnterpriseBackendSystem\Entity\obj\Debug\net8.0\ref\Entity.dll
