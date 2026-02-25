@@ -44,11 +44,6 @@ namespace DataAccessLayer.Repositories
             }
         }
 
-        public int AddAndGetId(Recipe item)
-        {
-            throw new NotImplementedException();
-        }
-
         public bool Delete(Recipe item)
         {
             using (var sqlConnection = new SqlConnection(ConnectionBase.ConnectionString))

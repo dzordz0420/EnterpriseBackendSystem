@@ -12,8 +12,6 @@ namespace DataAccessLayer.IRepositories
     {
         Recipe GetRecipeById(int id);
         int NumberOfByUserId(int id);
-
-        int AddAndGetId(Recipe item);
         List<Recipe> GetByIds(List<int> ids);
     }
 }
