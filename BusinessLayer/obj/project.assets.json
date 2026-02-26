@@ -1,11 +1,46 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.dll": {}
+        }
+      },
+      "Entity/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Entity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entity.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Core/1.0.0": {
+      "type": "project",
+      "path": "../Core/Core.csproj",
+      "msbuildProject": "../Core/Core.csproj"
+    },
+    "Entity/1.0.0": {
+      "type": "project",
+      "path": "../Entity/Entity.csproj",
+      "msbuildProject": "../Entity/Entity.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "Core >= 1.0.0",
+      "Entity >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\dzord\\.nuget\\packages\\": {},
@@ -38,7 +73,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\C# project\\EnterpriseBackendSystem\\Core\\Core.csproj": {
+              "projectPath": "E:\\C# project\\EnterpriseBackendSystem\\Core\\Core.csproj"
+            },
+            "E:\\C# project\\EnterpriseBackendSystem\\Entity\\Entity.csproj": {
+              "projectPath": "E:\\C# project\\EnterpriseBackendSystem\\Entity\\Entity.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
