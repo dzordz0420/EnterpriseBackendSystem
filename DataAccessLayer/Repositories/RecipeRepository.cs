@@ -203,5 +203,44 @@ namespace DataAccessLayer.Repositories
                 }
             }
         }
+
+        public Recipe GetDetailsById(int id)
+        {
+            Recipe recipe = null;
+
+            using (var sqlConnection = new SqlConnection(ConnectionBase.ConnectionString))
+            {
+                sqlConnection.Open();
+
+                using (var sqlCommand = sqlConnection.CreateCommand())
+                {
+                    sqlCommand.CommandText = "SELECT * FROM Recepti WHERE idRecepta = @id";
+                    sqlCommand.Parameters.AddWithValue("@id", id);
+
+                    using (var reader = sqlCommand.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            recipe = new Recipe
+                            {
+                                IdRecipe = reader.GetInt32(0),
+                                Name = GetStringSafe(reader, 1),
+                                ShortDescription = GetStringSafe(reader, 2),
+                                Description = GetStringSafe(reader, 3),
+                                Time = reader.GetInt32(4),
+                                Category = GetStringSafe(reader, 5),
+                                AverageRating = GetDecimalSafe(reader, 6),
+                                Author = reader.GetInt32(7),
+                                RecipePicture = GetStringSafe(reader, 8),
+                            };
+                        }
+                    }
+                }
+
+                if (recipe == null)
+                    return null;
+                return recipe;
+            }
+        }
     }
 }

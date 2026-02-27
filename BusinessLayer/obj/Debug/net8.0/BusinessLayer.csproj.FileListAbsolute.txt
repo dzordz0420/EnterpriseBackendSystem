@@ -10,3 +10,11 @@ E:\C# project\EnterpriseBackendSystem\BusinessLayer\obj\Debug\net8.0\refint\Busi
 E:\C# project\EnterpriseBackendSystem\BusinessLayer\obj\Debug\net8.0\BusinessLayer.pdb
 E:\C# project\EnterpriseBackendSystem\BusinessLayer\obj\Debug\net8.0\ref\BusinessLayer.dll
 E:\C# project\EnterpriseBackendSystem\BusinessLayer\obj\Debug\net8.0\BusinessLayer.sourcelink.json
+E:\C# project\EnterpriseBackendSystem\BusinessLayer\bin\Debug\net8.0\Core.dll
+E:\C# project\EnterpriseBackendSystem\BusinessLayer\bin\Debug\net8.0\Entity.dll
+E:\C# project\EnterpriseBackendSystem\BusinessLayer\bin\Debug\net8.0\Core.pdb
+E:\C# project\EnterpriseBackendSystem\BusinessLayer\bin\Debug\net8.0\Entity.pdb
+E:\C# project\EnterpriseBackendSystem\BusinessLayer\obj\Debug\net8.0\BusinessLayer.csproj.AssemblyReference.cache
+E:\C# project\EnterpriseBackendSystem\BusinessLayer\obj\Debug\net8.0\Business.EA331CBA.Up2Date
+E:\C# project\EnterpriseBackendSystem\BusinessLayer\bin\Debug\net8.0\DataAccessLayer.dll
+E:\C# project\EnterpriseBackendSystem\BusinessLayer\bin\Debug\net8.0\DataAccessLayer.pdb

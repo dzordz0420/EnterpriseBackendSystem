@@ -10,9 +10,8 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Abstract
 {
-    public interface IUserBusiness : IBusiness<User>
+    public interface IRecipeBusiness : IBusiness<Recipe>
     {
-        ResultWrapper Login(LoginDTO loginDTO);
-        User GetByEmail(string email);
+        RecipeDetailsDTO GetDetailsById(int id);
     }
 }
