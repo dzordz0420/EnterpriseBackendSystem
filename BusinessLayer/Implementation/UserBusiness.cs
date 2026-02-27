@@ -36,23 +36,9 @@ namespace BusinessLayer.Implementation
                     Success = false
                 };
             }
-
-            if (userRepository.Add(item) == true)
-            {
-                return new ResultWrapper
-                {
-                    Message = "Successfully added user",
-                    Success = true
-                };
-            }
-            else
-            {
-                return new ResultWrapper
-                {
-                    Message = "Error user not added",
-                    Success = false
-                };
-            }
+            return userRepository.Add(item)
+                ? new ResultWrapper { Message = "Successfuly added user", Success = true }
+                : new ResultWrapper { Message = "Error while attempting to add a user", Success = false };
         }
 
         public ResultWrapper Delete(User item)
@@ -65,25 +51,9 @@ namespace BusinessLayer.Implementation
                     Success = false
                 };
             }
-            else
-            {
-                if (userRepository.Delete(item) == true)
-                {
-                    return new ResultWrapper
-                    {
-                        Message = "Successuflly deleted user account",
-                        Success = true
-                    };
-                }
-                else
-                {
-                    return new ResultWrapper
-                    {
-                        Message = "Error while attempting to delete user account",
-                        Success = false
-                    };
-                }
-            }
+            return userRepository.Delete(item)
+                ? new ResultWrapper { Message = "Successfuly deleted user", Success = true }
+                : new ResultWrapper { Message = "Error while attempting to delete a user", Success = false };
         }
 
         public List<User> GetAll()
@@ -94,15 +64,13 @@ namespace BusinessLayer.Implementation
         public User GetByEmail(string email)
         {
             var x = userRepository.GetUserByEmail(email);
-            if (x == null) return new User();
-            return x;
+            return x ?? new User();
         }
 
         public User GetById(int id)
         {
             var x = userRepository.GetUserById(id);
-            if (x == null) return new User();
-            return x;
+            return x ?? new User();
         }
 
         public ResultWrapper Login(LoginDTO loginDTO)
@@ -117,37 +85,16 @@ namespace BusinessLayer.Implementation
                     Message = "Incorrect email or password"
                 };
             }
-
-            if (HashingHelper.VerifyHash(loginDTO.Password, korisnik.Password))
-            {
-                return new ResultWrapper
-                {
-                    Success = true,
-                    Message = "Login successful"
-                };
-            }
-            else
-            {
-                return new ResultWrapper
-                {
-                    Success = false,
-                    Message = "Incorrect email or password"
-                };
-            }
+            return HashingHelper.VerifyHash(loginDTO.Password, korisnik.Password)
+                ? new ResultWrapper { Message = "Login successful", Success = true }
+                : new ResultWrapper { Message = "Incorrect email or password", Success = false };
         }
 
         public ResultWrapper Update(User item)
         {
-            return userRepository.Update(item) == true ?
-                new ResultWrapper
-                {
-                    Message = "Successfuly updated user account",
-                    Success = true
-                } : new ResultWrapper
-                {
-                    Message = "Error while updating user account",
-                    Success = false
-                };
+            return userRepository.Update(item)
+                ? new ResultWrapper { Message = "Successfuly updated user", Success = true }
+                : new ResultWrapper { Message = "Error while attempting to update a user", Success = false };
         }
     }
 }
